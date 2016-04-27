@@ -9,16 +9,16 @@
   The initial code for my calendar is complete. Instead of being a yearly calendar, I implemented a calendar strictly for the month of may. The calendar no longer uses hash tables but rather arrays because the hash function was found to be irrelevant. The calendar still uses linked lists to store the meetings each day chronologically.
   
   The 10 public methods are:
-1. void buildCalendar();  //initializes calendar
-2. void printDay(int day);  //print single day calendar
-3. void printCalendar(); //print whole month calendar
-4. void addEvent(std::string title, int time, int day);  //adds events
-5. void deleteEvent(int time, int day); //deletes event
-6. bool checkAvailability(int time, int day); //check if event exists at certain day/time
-7. void deleteAll(); //deletes entire calendar
-8. int countEvents(int day); // counts events in a day
-9. int recommendTime(int day); //recommends times for a meeting when attempting to schedule an already planned time
-10. void certainDay(std::string name); //finds all meetings on a certain day (i.e. all meetings on Monday, etc...)
+  1. void buildCalendar();  //initializes calendar
+  2. void printDay(int day);  //print single day calendar
+  3. void printCalendar(); //print whole month calendar
+  4. void addEvent(std::string title, int time, int day);  //adds events
+  5. void deleteEvent(int time, int day); //deletes event
+  6. bool checkAvailability(int time, int day); //check if event exists at certain day/time
+  7. void deleteAll(); //deletes entire calendar
+  8. int countEvents(int day); // counts events in a day
+  9. int recommendTime(int day); //recommends times for a meeting when attempting to schedule an already planned time
+  10. void certainDay(std::string name); //finds all meetings on a certain day (i.e. all meetings on Monday, etc...)
 
 -------
 Initial Post:
