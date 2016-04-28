@@ -9,7 +9,7 @@
 Open the files main.cpp, calendar.h, and calendar.cpp. Activate GNU compiler with c++11. Run the program. Below is a list of functions and how to use them. For each of the functions, input the associated integer when the main menu appears to activate the function.
   1. Scheduling an event
     -Enter a 1 to schedule add an event
-   -Enter a day in May by inputting an integer between 1 and 31
+      -Enter a day in May by inputting an integer between 1 and 31
     -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
     -Enter an event title by inputting a string
     -A confirmation message will appear and bring you back to the menu
