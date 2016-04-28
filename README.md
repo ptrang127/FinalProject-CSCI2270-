@@ -10,10 +10,15 @@ Open the files main.cpp, calendar.h, and calendar.cpp. Activate GNU compiler wit
   1. Scheduling an event
   
     -Enter a 1 to schedule add an event
+
     -Enter a day in May by inputting an integer between 1 and 31
+    
     -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
+    
     -Enter an event title by inputting a string
+    
     -A confirmation message will appear and bring you back to the menu
+    
   **Scheduling conflicts**
     -Follow the above instructions for entering an event
     -Create another event at the same day and time as the first one
