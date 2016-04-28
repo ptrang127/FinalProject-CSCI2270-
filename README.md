@@ -8,45 +8,45 @@
 
 Open the files main.cpp, calendar.h, and calendar.cpp. Activate GNU compiler with c++11. Run the program. Below is a list of functions and how to use them. For each of the functions, input the associated integer when the main menu appears to activate the function.
   1. Scheduling an event
-  -Enter a 1 to schedule add an event
-  -Enter a day in May by inputting an integer between 1 and 31
-  -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
-  -Enter an event title by inputting a string
-  -A confirmation message will appear and bring you back to the menu
+    -Enter a 1 to schedule add an event
+   -Enter a day in May by inputting an integer between 1 and 31
+    -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
+    -Enter an event title by inputting a string
+    -A confirmation message will appear and bring you back to the menu
   **Scheduling conflicts**
-  -Follow the above instructions for entering an event
-  -Create another event at the same day and time as the first one
-  -An error message will occur, showing what times are taken on that specific day
-  -Input either:
+    -Follow the above instructions for entering an event
+    -Create another event at the same day and time as the first one
+    -An error message will occur, showing what times are taken on that specific day
+    -Input either:
     a) A time that is not taken (an integer between 0 and 23)
     b) The integer -1 to cancel the process and take you back to the menu
   -Inputting a taken time or a number x outside 0<x<23 will prompt you to reinput the number
   2. Delete an event 
   *Note* An event must have been created for this to work
-  -Enter the day of the event by inputting the number of the day for the event (between 1 and 31)
-  -Enter the time of the event by inputting the number of the time for the event (between 0 and 23)
-  -If an event is found, a confirmation message will be displayed.
-  -If not, a message will tell you the "event does not exist".
+    -Enter the day of the event by inputting the number of the day for the event (between 1 and 31)
+    -Enter the time of the event by inputting the number of the time for the event (between 0 and 23)
+    -If an event is found, a confirmation message will be displayed.
+    -If not, a message will tell you the "event does not exist".
   3. Check Availability
-  -Enter a day in May by inputting an integer between 1 and 31
-  -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
-  -If there is an event at this day and time, a message will be displayed containing the information about the event.
-  -If there is no event, a message will be displayed saying "this time is free."
+    -Enter a day in May by inputting an integer between 1 and 31
+    -Enter a time of day in 24-hour time (e.g. 14 = 2pm) by inputting an integer between 0 and 23
+    -If there is an event at this day and time, a message will be displayed containing the information about the event.
+    -If there is no event, a message will be displayed saying "this time is free."
   4. View a certain day's schedule
-  -Enter a day in May by inputting an integer between 1 and 31
-  -If there are events scheduled on this day, they will be displayed in chronological order
-  -If not, a message will be displayed telling you so.
+    -Enter a day in May by inputting an integer between 1 and 31
+    -If there are events scheduled on this day, they will be displayed in chronological order
+    -If not, a message will be displayed telling you so.
   5. View all events on a certain day of the week
-  -Enter a string containing exactly the day of the week wish to search for (e.g. Monday, Tuesday...)
-  -If there are events, they will be displayed
-  -If not, a message will be displayed telling you so
+    -Enter a string containing exactly the day of the week wish to search for (e.g. Monday, Tuesday...)
+    -If there are events, they will be displayed
+    -If not, a message will be displayed telling you so
   6. Check whole month's schedule
-  -This function will simply print all events in chronological order
+    -This function will simply print all events in chronological order
   7. Delete whole month's schedule
-  -This function will delete all events on all days.
-  -It doesn't print anything, so use the previous function to check the whole month's schedule
+    -This function will delete all events on all days.
+    -It doesn't print anything, so use the previous function to check the whole month's schedule
   8. Quit
-  -Ends the program
+    -Ends the program
 
 */
 
