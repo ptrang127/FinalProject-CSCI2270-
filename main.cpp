@@ -24,7 +24,8 @@ int main()
             cout << "5. View all events on a certain day of the week" << endl;
             cout << "6. Check whole month's schedule" << endl; //print all events
             cout << "7. Delete whole month's schedule" << endl;
-            cout << "8. Quit" << endl;
+            cout << "8. Edit an event" << endl;
+            cout << "9. Quit" << endl;
             //cin>>choice;
             while (!(cin>>choice) || choice < 1 || choice > 8){
                 cout << "Please choose one of the options listed: " << endl;
@@ -135,7 +136,16 @@ int main()
                 case 7:
                     c.deleteAll();
                     break;
-                case 8:  //quit
+                case 8:
+                    int day;
+                    int time;
+                    cout << "Enter the day of the event you want to edit:" << endl;
+                    cin >> day;
+                    cout << "Enter the time of the event you want to edit:" << endl;
+                    cin >> time;
+                    c.editEventName(day, time);
+                    break;
+                case 9:  //quit
                     Menu = false;
                     cout<<"Goodbye!"<<endl;
                     break;
