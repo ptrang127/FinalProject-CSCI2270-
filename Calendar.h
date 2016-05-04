@@ -48,9 +48,9 @@ class Calendar
 		int countEvents(int day); // counts events in a day
 		int recommendTime(int day);
 		void certainDay(std::string name);
+		void editEventName(int day, int time);
 	private:
 		daysArr* days[31];
 };
 
 #endif
-
