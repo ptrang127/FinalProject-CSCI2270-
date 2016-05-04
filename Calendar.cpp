@@ -245,3 +245,43 @@ void Calendar::certainDay(string name){
     }
 }
 
+void Calendar::editEventName(int day, int time){
+    linkedList *current = days[day-1]->toHead->next;
+    if (current == NULL){
+        cout<<"There is nothing scheduled for today."<<endl;
+        return;
+    }
+    bool found;
+    while(current != NULL){
+        if(current -> time == time){
+            found = true;
+        }
+        current = current -> next;
+    }
+    if (found){
+    current = days[day-1]->toHead->next;
+    string name; // new name
+    int num;
+        while(current->time != time){
+            current = current-> next;
+        }
+        cout<<"On " << days[day-1]->name << " May " << days[day-1]->num << ":" << endl;
+        cout<<"Time: "<< current->time << " Title: " << current->title<<endl;
+    // change name code
+    cout << "What would you like to change the event name to?" << endl;
+    cin.ignore();
+    getline(cin, name);
+    cout << "What would you like to change the event time to?" << endl;
+    cin >> num;
+    if(!checkAvailability(num, day)){
+        return;
+    }
+    current->title = name;
+    current->time = num;
+    cout << "Event name has been changed!" << endl;
+    }
+    else{
+        cout << "No event scheduled at that time" << endl;
+    }
+}
+
